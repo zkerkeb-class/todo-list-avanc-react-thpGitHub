@@ -33,7 +33,6 @@ function TaskApp() {
           Gestionnaire de tâches
         </h1>
 
-        {/* Input pour ajouter une nouvelle tâche */}
         <div className="flex mb-6">
           <input
             type="text"
@@ -50,7 +49,6 @@ function TaskApp() {
           </button>
         </div>
 
-        {/* Filtres */}
         <div className="flex justify-around mb-6">
           <button
             onClick={() => setFilter("all")}
@@ -84,7 +82,6 @@ function TaskApp() {
           </button>
         </div>
 
-        {/* Liste des tâches */}
         <ul className="space-y-4">
           {filteredTasks.length > 0 ? (
             filteredTasks.map((task, index) => (

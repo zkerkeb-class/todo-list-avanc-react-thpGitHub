@@ -1,10 +1,8 @@
 import React, { createContext, useContext } from "react";
 import { useTasks } from "../hooks/useTasks";
 
-// Créer le contexte
 const TasksContext = createContext();
 
-// Provider du contexte
 export const TasksProvider = ({ children }) => {
   const { tasks, addTask, deleteTask, toggleTaskCompletion } = useTasks();
 
